@@ -1,0 +1,230 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fcefef;
+  color: black;
+}
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  background-color: ;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1rem 1rem 0.5rem; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  height: 100px;
+   width: 100px ;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--black-color);
+  font-weight: var(--font-bold);
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--first-color);
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+
+.about h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: rgb(107, 52, 28);
+}
+
+.intro {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: black;
+}
+.history, .team {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.history h2,
+.team h2,
+.carousel h2 {
+  color: rgb(107, 52, 28);
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.history p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: black;
+}
+.team {
+  text-align: center;
+}
+
+.team p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1em;
+  color: black;
+}
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.member-card {
+  background-color: #fff0f4;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.member-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #b76e79;
+  margin-bottom: 15px;
+}
+
+.member-name {
+  font-weight: bold;
+  color: rgb(107, 52, 28);
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.member-role {
+  font-style: italic;
+  color: bl;
+  font-size: 0.95em;
+}
+
+.carousel {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.carousel h2 {
+  color: #b76e79;
+  margin-bottom: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+/* Boutons de navigation */
+.navigation {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.navigation label {
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  background: #b76e79;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.navigation label:hover {
+  background: black;
+}
+
+@media (max-width: 768px) {
+  .team-members {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .slider {
+    width: 95%;
+  }
+}

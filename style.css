@@ -1,0 +1,257 @@
+
+
+:root {
+    --header-height: 6.25rem;
+  
+    --main-color: #f7e6df;    
+    --first-color: #75492b;    
+    --second-color: #dfd6a7;   
+    --white-color: #f7e6df;
+    --black-color: #151515;
+  
+    --font-light: 300;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+  
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --normal-font-size: 1rem;
+  
+    --font-body: 'Arial', sans-serif;
+  
+  }
+  
+  
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    
+  }
+  
+  body {
+    font-family: var(--font-body);
+    font-size: var(--normal-font-size);
+    background-color: var(--white-color);
+    color: var(--black-color);
+    overflow-x: hidden;
+  }
+  
+  
+  .header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    background-color: ;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    
+    
+  }
+
+  .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 1rem 1rem 0.5rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .logo {
+    height: 100px;
+     width: 100px ;
+  }
+  
+  .nav-list {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-link {
+    color: var(--black-color);
+    font-weight: var(--font-bold);
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--first-color);
+  }
+  .hero {
+    margin-top: var(--header-height);
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: var(--main-color);
+    background-image: url("image site/Image11.jpg");
+    
+    
+  }
+  
+  .hero h1 {
+    font-size: var(--h1-font-size);
+    color: var(--first-color);
+    margin-bottom: 1rem;
+  }
+  
+  .hero h1 span {
+    color: var(--black-color);
+  }
+  
+  .slogan {
+    font-style: italic;
+    color: black
+    margin-bottom: 1rem;
+    font-size: x-large;
+  }
+
+  
+  .presentation {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    border-radius: 30px;
+    font-weight: var(--font-medium);
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #5a341f;
+  }
+  
+  .btn-secondary {
+    background-color: var(--black-color);
+  }
+  
+  .btn-secondary:hover {
+    background-color: #000;
+  }
+  .site-card {
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .site-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  .site-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+.site-page {
+  margin-top: var(--header-height);
+  padding: 4rem 2rem;
+  background-color: var(--main-color);
+  text-align: center;
+}
+
+.site h1 {
+  font-size: var(--h1-font-size);
+  color: var(--first-color);
+  margin-bottom: 2rem;
+}
+
+.site-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:20px;
+  flex-wrap: wrap;
+
+}
+
+.site:hover {
+  transform: scale(1.05);
+}
+
+.site img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.site h2 {
+  font-size: 1.25rem;
+  color: var(--black-color);
+}
+
+.site p {
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.site {
+  display: block;
+  margin-bottom: 5rem;
+  font-weight: var(--font-bold);
+  color: var(--first-color);
+}
+
+.avis {
+  background-color: #fffaf9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.avis h2 {
+  font-size: 2.5rem;
+  color: rgb(107, 52, 28);
+  margin-bottom: 40px;
+}
+
+.avis-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.avis-card {
+  background-color: #fff;
+  border: 2px solid #d4a373;
+  border-radius: 20px;
+  padding: 25px 20px;
+  width: 300px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  position: relative;
+}
+
+.avis-card span {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #a87c82;
+}
+
+@media (max-width: 768px) {
+  .avis-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
