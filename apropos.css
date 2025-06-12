@@ -6,7 +6,6 @@ body {
   background-color: #fcefef;
   color: black;
 }
-
 .header {
   position: relative;
   top: 0;
@@ -26,18 +25,15 @@ body {
   align-items: center;
   position: relative;
 }
-
 .logo {
   height: 100px;
    width: 100px ;
 }
-
 .nav-list {
   display: flex;
   gap: 2rem;
   list-style: none;
 }
-
 .nav-link {
   color: var(--black-color);
   font-weight: var(--font-bold);
@@ -53,15 +49,12 @@ body {
   margin: 0 auto;
   padding: 40px 20px;
 }
-
-
 .about h1 {
   text-align: center;
   font-size: 2.5em;
   margin-bottom: 30px;
   color: rgb(107, 52, 28);
 }
-
 .intro {
   font-size: 1.2em;
   text-align: center;
@@ -72,7 +65,6 @@ body {
   margin-bottom: 30px;
   text-align: center;
 }
-
 .history h2,
 .team h2,
 .carousel h2 {
@@ -80,7 +72,6 @@ body {
   margin-bottom: 20px;
   font-size: 2em;
 }
-
 .history p {
   font-size: 1.1em;
   line-height: 1.6;
@@ -89,21 +80,18 @@ body {
 .team {
   text-align: center;
 }
-
 .team p {
   max-width: 700px;
   margin: 0 auto 30px;
   font-size: 1.1em;
   color: black;
 }
-
 .team-members {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
 }
-
 .member-card {
   background-color: #fff0f4;
   border-radius: 20px;
@@ -112,12 +100,10 @@ body {
   width: 250px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .member-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
-
 .member-photo {
   width: 100px;
   height: 100px;
@@ -133,23 +119,19 @@ body {
   font-size: 1.2em;
   margin-bottom: 5px;
 }
-
 .member-role {
   font-style: italic;
   color: bl;
   font-size: 0.95em;
 }
-
 .carousel {
   text-align: center;
   margin: 60px 0;
 }
-
 .carousel h2 {
   color: #b76e79;
   margin-bottom: 20px;
 }
-
 .slider {
   position: relative;
   width: 80%;
@@ -163,22 +145,18 @@ body {
   width: 300%;
   transition: transform 0.5s ease-in-out;
 }
-
 .slide {
   width: 100%;
   flex-shrink: 0;
 }
-
 .slide img {
   width: 100%;
   height: auto;
   display: block;
 }
-
 input[type="radio"] {
   display: none;
 }
-
 #slide1:checked ~ .slides {
   transform: translateX(0%);
 }
@@ -188,8 +166,6 @@ input[type="radio"] {
 #slide3:checked ~ .slides {
   transform: translateX(-200%);
 }
-
-/* Boutons de navigation */
 .navigation {
   position: absolute;
   width: 100%;
@@ -198,7 +174,6 @@ input[type="radio"] {
   justify-content: center;
   gap: 10px;
 }
-
 .navigation label {
   cursor: pointer;
   width: 12px;
@@ -208,22 +183,38 @@ input[type="radio"] {
   display: inline-block;
   transition: background 0.3s;
 }
-
 .navigation label:hover {
   background: black;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container, .content {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
 @media (max-width: 768px) {
-  .team-members {
-    flex-direction: column;
-    align-items: center;
-  }
-
+    body {
+        font-size: 16px;
+    }
+    header, section, footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
   .member-card {
     width: 90%;
     max-width: 300px;
   }
-
   .slider {
     width: 95%;
   }
