@@ -220,9 +220,9 @@ img {
     }
     header, section, footer {
         display: flex;
-        flex-direction: center;
+        flex-direction: column;
         align-items: center;
-        text-align: right;
+        text-align: center;
     }
       nav ul {
         display: flex;
