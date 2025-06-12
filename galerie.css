@@ -13,10 +13,7 @@ body {
   background-color: ;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   z-index: 1000;
-  
-  
 }
-
 .navbar {
   max-width: 1200px;
   margin: 0 auto;
@@ -26,29 +23,24 @@ body {
   align-items: center;
   position: relative;
 }
-
 .logo {
   height: 100px;
    width: 100px ;
 }
-
 .nav-list {
   display: flex;
   gap: 2rem;
   list-style: none;
 }
-
 .nav-link {
   color: var(--black-color);
   font-weight: var(--font-bold);
   transition: color 0.3s ease;
   text-decoration: none;
 }
-
 .nav-link:hover {
   color: var(--first-color);
 }
-
 .gallery {
   max-width: 1200px;
   margin: 40px auto;
@@ -58,7 +50,6 @@ body {
   padding: 30px;
   box-shadow: 0 8px 20px  solid #d4a373 ;
 }
-
 .gallery h2 {
   text-align: center;
   font-size: 2.5rem;
@@ -66,14 +57,12 @@ body {
   margin-bottom: 30px;
   font-weight: 600;
 }
-
 .gallery-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
-
 .gallery-row img {
   width: 250px;
   height: 300px;
@@ -82,8 +71,32 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
 .gallery-row img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(198, 157, 163, 0.6); 
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container, .content {
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+    header, section, footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+      nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
