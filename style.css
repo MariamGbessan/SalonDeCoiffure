@@ -214,6 +214,7 @@ img {
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
+    flex-wrap: nowrap;
 }
 @media (max-width: 768px) {
     body {
@@ -221,7 +222,7 @@ img {
     }
     header, section, footer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         text-align: center;
     }
